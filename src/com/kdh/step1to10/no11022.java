@@ -7,7 +7,7 @@ import java.io.OutputStreamWriter;
 import java.util.StringTokenizer;
 
 public class no11022 {
-
+	
 	public static void main(String[] args) {
 		
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
@@ -20,7 +20,9 @@ public class no11022 {
 	 
 			for (int i = 0; i < N; i++) {
 				st = new StringTokenizer(br.readLine()," ");
-				bw.write("Case #"+(i+1)+": "+Integer.parseInt(st.nextToken()) +"+"+ Integer.parseInt(st.nextToken()) + " = " +(Integer.parseInt(st.nextToken()) + Integer.parseInt(st.nextToken()))+ "\n");
+				int a = Integer.parseInt(st.nextToken());
+				int b = Integer.parseInt(st.nextToken());
+				bw.write("Case #"+(i+1)+": "+a+" + "+b+" = "+(a+b)+ "\n");
 			}
 			br.close();
 	        
